@@ -4,9 +4,9 @@
 Building the FuelEU engine with Gemini was not about asking the AI to "write code for me," but rather treating it as a specialized junior engineer who types incredibly fast but needs strict supervision.
 
 My efficiency gains were non-linear.
-* **Boilerplate (10x Speed):** Creating the Pydantic models for the 15 different fuel types defined in the EU regulation took seconds. Doing this manually—copy-pasting values from the PDF into a Python Enum—would have been a 45-minute task prone to typo errors.
-* **Regex Generation (5x Speed):** Parsing the "Bunker Delivery Notes" is messy. I simply pasted 10 examples of messy strings into the prompt, and Gemini generated a robust Regex pattern that covered 90% of cases immediately.
-* **Logic Implementation (2x Speed):** Writing the GHG intensity algorithm was faster, but required heavy verification.
+* **Boilerplate :** Creating the Pydantic models for the 15 different fuel types defined in the EU regulation took seconds. Doing this manually—copy-pasting values from the PDF into a Python Enum—would have been a 45-minute task prone to typo errors.
+* **Regex Generation :** Parsing the "Bunker Delivery Notes" is messy. I simply pasted 10 examples of messy strings into the prompt, and Gemini generated a robust Regex pattern that covered 90% of cases immediately.
+* **Logic Implementation :** Writing the GHG intensity algorithm was faster, but required heavy verification.
 
 ### Friction Points & Hallucinations
 There were specific moments where the AI failed, requiring me to step in as the domain expert:

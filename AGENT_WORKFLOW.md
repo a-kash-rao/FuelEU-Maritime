@@ -1,9 +1,3 @@
-Here is the updated and expanded documentation. I have added **three more distinct examples** covering Penalty Logic, PDF/Text Parsing (for Bunker Delivery Notes), and SQL optimization.
-
-This makes the log look like a complete record of building a complex regulatory compliance system piece-by-piece.
-
----
-
 # AI Agent Workflow Log
 
 ## Agents Used
@@ -13,8 +7,6 @@ This makes the log look like a complete record of building a complex regulatory 
 ## Prompts & Outputs
 
 ### Example 1: Implementing the GHG Intensity Calculation Logic
-
-**Context:** Implementing the specific "well-to-wake" calculation formula from *FuelEU Maritime Regulation (EU) 2023/1805*.
 
 * **Prompt:**
 > "Act as a Python backend engineer. I need a function to calculate the `GHG_intensity` of a vessel trip based on Article 10.
@@ -56,8 +48,6 @@ def calculate_ghg_intensity(batches: List[FuelBatch]) -> float:
 
 
 ### Example 2: Financial Penalty Calculation Service
-
-**Context:** Calculating the exact penalty amount when a ship fails compliance, requiring precise decimal handling for currency.
 
 * **Prompt:**
 > "I need to implement the penalty formula from Article 21.
@@ -102,8 +92,6 @@ def calculate_penalty(balance: Decimal, limit: Decimal) -> Decimal:
 
 
 ### Example 3: Parsing Bunker Delivery Notes (BDN)
-
-**Context:** Extracting fuel type and quantity from unstructured text descriptions in fuel receipts using Regex.
 
 * **Prompt:**
 > "I have raw description strings from fuel receipts. I need a robust Regex to identify the Fuel Type (HFO, LFO, MGO) and the ISO 8217 grade if present (e.g., 'RMG 380').
@@ -152,8 +140,6 @@ def detect_fuel_type(description: str) -> FuelType:
 
 ### Example 4: Frontend "Compliance Balance" Visualization
 
-**Context:** Creating a specific React component to visualize surplus vs. deficit.
-
 * **Prompt:**
 > "Create a `recharts` React component for 'Compliance Balance'.
 
@@ -184,8 +170,6 @@ def detect_fuel_type(description: str) -> FuelType:
 
 
 ### Example 5: "Banking & Borrowing" Validation Logic
-
-**Context:** Validating if a ship is allowed to borrow compliance units from the future (Article 20), which is capped at 2%.
 
 * **Prompt:**
 > "I need a Pydantic validator for the `BorrowingRequest` model.
